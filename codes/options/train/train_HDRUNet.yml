@@ -11,9 +11,9 @@ datasets:
   train:
     name: Single_LDR2HDR
     mode: LQGT_condition
-    dataroot_LQ: /data0/NTIRE2021_HDR/000_Train_SingleFrame_FirstStage/medium_sub
-    dataroot_GT: /data0/NTIRE2021_HDR/000_Train_SingleFrame_FirstStage/gt_sub
-    dataroot_ratio: /data0/NTIRE2021_HDR/000_Train_SingleFrame_FirstStage/alignratio
+    dataroot_LQ: /content/train2/ldr_images
+    dataroot_GT: /content/train2/hdr_images
+    dataroot_ratio: /content/train2/align
     use_shuffle: true
     n_workers: 8
     batch_size: 16
@@ -24,9 +24,9 @@ datasets:
   val:
     name: Single_LDR2HDR
     mode: LQGT_condition
-    dataroot_LQ: /data0/NTIRE2021_HDR/000_Valid_SingleFrame_FirstStage/medium
-    dataroot_GT: /data0/NTIRE2021_HDR/000_Valid_SingleFrame_FirstStage/gt
-    dataroot_ratio: /data0/NTIRE2021_HDR/000_Valid_SingleFrame_FirstStage/alignratio
+    dataroot_LQ: /content/val2/ldr_images
+    dataroot_GT: /content/val2/hdr_images
+    dataroot_ratio: /content/val2/align
     condition: image
 
 #### network structures
