@@ -5,19 +5,19 @@ import data_io as io
 import cv2
 import metrics as m
 
-ref_dir = './Validation/gt'
-ref_alignratio_dir = './Validation/alignratio'
+ref_dir = '/content/val2/hdr_images'
+ref_alignratio_dir = '/content/val2/align'
 # res_dir = './Validation/medium'
 # res_alignratio_dir = ref_alignratio_dir
-res_dir = './Validation/results'
-res_alignratio_dir = res_dir
+res_dir = '/content/val2/hdr_images'
+res_alignratio_dir = '/content/val2/align'
 
-ref_output_dir = './Validation/tone_mapped_gt'
+ref_output_dir = '/content/val2/tone_mapped_gt'
 # res_output_dir = './Validation/tone_mapped_medium'
-res_output_dir = './Validation/tone_mapped_results'
+res_output_dir = '/content/val2/tone_mapped_results'
 
-# if not osp.exists(ref_output_dir):
-#     os.mkdir(ref_output_dir)
+if not osp.exists(ref_output_dir):
+    os.mkdir(ref_output_dir)
 
 if not osp.exists(res_output_dir):
     os.mkdir(res_output_dir)
