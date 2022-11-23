@@ -56,5 +56,8 @@ for test_loader in test_loaders:
         sr_img = util.tensor2numpy(visuals['SR'])
         image_path, alignratio_path = util.generate_paths(dataset_dir, img_name)
         util.save_img_with_ratio(image_path, sr_img, alignratio_path)
-
+        
+        #the command below added additionally to create HDR output for PYNET LDR (full resolution data)
+        imageio.imwrite("/content/gdrive/MyDrive/ColabNotebooks/PYNET/dataset/hdrunet/hdr_out" + str(img_name) + "_hdr_" + ".png", sr_img)
+        
         logger.info('{:20s}'.format(img_name))
