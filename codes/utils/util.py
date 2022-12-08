@@ -136,7 +136,8 @@ def save_img_with_ratio(image_path, image, alignratio_path):
     return None
 
 def generate_paths(folder, name):
-    id = name[:4]
+    #id = name[:4]
+    id = name
     image_path = os.path.join(folder, id+'.png')
     alignratio_path = os.path.join(folder, id+'_alignratio.npy')
     return image_path, alignratio_path
