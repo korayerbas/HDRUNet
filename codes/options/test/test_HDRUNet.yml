@@ -8,7 +8,7 @@ datasets:
   test_1:  # the 1st test dataset
     name: 000_Valid_SingleFrame_FirstStage
     mode: LQ_condition
-    dataroot_LQ: /content/gdrive/MyDrive/ColabNotebooks/PYNET/dataset/full_resolution/huawei_visualized
+    dataroot_LQ: /content/gdrive/MyDrive/ColabNotebooks/PYNET/dataset/full_resolution/pynet_res_2976
     condition: image
     
 #### network structures
@@ -22,5 +22,5 @@ network_G:
 #### path
 path:
   root: ./
-  # pretrain_model_G: ../experiments/HDRUNet_tanh_l1_bs_16_ps_160/models/latest_G.pth
-  pretrain_model_G: ../pretrained_models/pretrained_model.pth
+  # pretrain_model_G: 
+  pretrain_model_G: /content/gdrive/MyDrive/ColabNotebooks/HDRUNet/pretrained_model.pth
