@@ -54,7 +54,7 @@ for test_loader in test_loaders:
         visuals = model.get_current_visuals(need_GT=need_GT)
 
         sr_img = util.tensor2numpy(visuals['SR'])
-        dataset_dir = "/content/gdrive/MyDrive/ColabNotebooks/PYNET/dataset/hdrunet/train/full_res_hdr"
+        dataset_dir = "/content/gdrive/MyDrive/ColabNotebooks/PYNET/dataset/hdrunet/train/hdr_out/"
 
         image_path, alignratio_path = util.generate_paths(dataset_dir, img_name)
         util.save_img_with_ratio(image_path, sr_img, alignratio_path)
